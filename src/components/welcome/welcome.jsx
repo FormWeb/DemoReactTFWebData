@@ -2,7 +2,6 @@ import PropTypes from "prop-types"
 import style from "./welcome.module.css"
 
 const Welcome = (props) => {
-
     const { nom, nomDeFamille, taille } = props
 
     return (
