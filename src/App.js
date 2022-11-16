@@ -4,6 +4,8 @@ import Welcome from './components/welcome/welcome';
 import ConditionalRendering from './components/conditional-rendering/conditional-rendering';
 import Products from './components/products/products';
 import { nanoid } from "nanoid"
+import Event from './components/event/event';
+import StateHook from './components/state-hook/state-hook';
 
 
 function App() {
@@ -22,6 +24,10 @@ function App() {
       <ConditionalRendering msg="Mon message" error={false}/>
       <h1>Demo Liste</h1>
       <Products products={products}/>
+      <h1>Demo Event</h1>
+      <Event></Event>
+      <h1>Demo State</h1>
+      <StateHook/>
     </div>
   );
 }
