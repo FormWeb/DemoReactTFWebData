@@ -9,13 +9,17 @@ import StateHook from './components/state-hook/state-hook';
 import SyncForm from './components/sync-form/sync-form';
 import CounterValue from './components/counter-comm/counter-value';
 import CounterButton from './components/counter-comm/counter-button';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 
 function App() {
 
   // State
   const [counter, setCounter] = useState(0)
+
+  useEffect(() => {
+    console.log("Bonjour mon App")
+  }, [counter])
 
   // Logique
   const products = [
