@@ -7,6 +7,8 @@ const StateHook = () => {
     function handleClick() {
         if (message === "Bonjour") {
             setMessage("Au revoir")
+            
+            console.log(message)
         }
         else {
             setMessage("Bonjour")
